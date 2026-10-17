@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Samuel Adiprabowo</title>
+  <meta name="description" content="Blog posts by Samuel Adiprabowo on metocean engineering, numerical modelling, and marine science." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("theme") === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="site-title">
+        <div class="site-title__logo">SA</div>
+        <div class="site-title__text">
+          <div class="site-title__name">Samuel Adiprabowo</div>
+          <div class="site-title__tagline">Marine &amp; Ocean Engineer</div>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="resume.html">Résumé</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page page--narrow">
+
+    <h1 class="page__title">Blog</h1>
+    <p class="page__lede">Notes and tutorials on metocean engineering, numerical modelling, and ocean data.</p>
+
+    <ul class="post-list">
+      <li>
+        <h2 class="post-list__title"><a href="blog/rayleigh-fractionation.html">Notes on SWAN wave modelling setup</a></h2>
+        <div class="post-list__meta">4 minute read</div>
+        <p class="post-list__excerpt">
+          A practical walkthrough of setting up a regional SWAN wave model —
+          computational domain, bathymetry, wind forcing, and boundary conditions.
+        </p>
+      </li>
+      <li>
+        <h2 class="post-list__title"><a href="blog/plot-map.html">Plotting marine data in Python with Cartopy</a></h2>
+        <div class="post-list__meta">6 minute read</div>
+        <p class="post-list__excerpt">
+          Making publication-quality maps of gridded wave and current data using
+          xarray and Cartopy.
+        </p>
+      </li>
+      <li>
+        <h2 class="post-list__title"><a href="blog/extreme-value.html">Extreme wave analysis and return periods</a></h2>
+        <div class="post-list__meta">5 minute read</div>
+        <p class="post-list__excerpt">
+          Estimating 20-, 50-, and 100-year significant wave heights from a
+          long-term hindcast using extreme-value distributions.
+        </p>
+      </li>
+      <li>
+        <h2 class="post-list__title"><a href="blog/hpc.html">Running SWAN on an HPC cluster with SLURM</a></h2>
+        <div class="post-list__meta">3 minute read</div>
+        <p class="post-list__excerpt">
+          A quick guide to submitting SWAN jobs with SLURM and monitoring HPC
+          service availability.
+        </p>
+      </li>
+    </ul>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__social">
+        <a href="contact.html">Contact</a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/samadiprabowo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="footer__note">
+        &copy; 2026 Samuel Adiprabowo. Built as a static site inspired by the Minimal Mistakes aesthetic.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
